@@ -149,7 +149,7 @@ def plot_board(board:list[list]) -> None:
     matplotlib.use('TkAgg')
     plt.imshow(board, cmap='viridis', interpolation='none')
     plt.colorbar()  # Adiciona a barra de cores ao lado
-    plt.title('Matriz Exemplo')
+    plt.title('Matriz')
     plt.show()
 
 M = int(input("Digite o número de linhas do tabuleiro: "))
@@ -179,7 +179,7 @@ while True:
         break
     
     if move(board, x, y, direction):
-        show_board(board)
-        #plot_board(board)
+        #show_board(board)
+        plot_board(board)
     
     
